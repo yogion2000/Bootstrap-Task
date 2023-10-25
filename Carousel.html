@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <title>Places</title>
+    <style>
+        .nav{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            
+        }
+        li{
+            padding:1px 5px 1px 5px;
+        }
+        li:nth-child(1){
+            background-color:#1181AE;
+            border-radius: 5px;
+        }
+        .pics{
+            margin-bottom: 20px;
+        }
+        .card{
+            border:0px;
+        }
+    </style> 
+</head>
+<body>
+    <div class="container-fluid">
+        <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+    </div>
+    <div class="pics">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1658937277374-633f9fa1f589?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Image 1</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptatem magnam tempore corrupti, provident est necessitatibus nostrum eius eum recusandae expedita nesciunt omnis corporis! Ipsum consectetur et reprehenderit non quidem?</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1658937277374-633f9fa1f589?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Image 2</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum necessitatibus facilis numquam quas exercitationem aliquam eos facere quidem. Reiciendis sed necessitatibus autem mollitia praesentium, aliquid a harum accusantium nemo suscipit?</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1658937277374-633f9fa1f589?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Image 3</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod id soluta dolorum fugit eligendi harum dolores aliquam sint labore. Nobis consequatur, optio laborum nesciunt quaerat eveniet quasi repudiandae eligendi illo?</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <div>
+        <div class="row">
+            <div class="col-lg-4 mb-3 mb-sm-0">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Bootstrap</h5>
+                  <p class="card-text">Bootstrap is a popular front-end framework that provides a collection of pre-designed HTML, CSS, and JavaScript components, along with a responsive grid system, to help developers create modern and responsive websites and web applications quickly</p>
+                  <p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample1" aria-expanded="false" aria-controls="collapseWidthExample">
+                      More!
+                    </button>
+                  </p>
+                  <div style="min-height: 120px;">
+                    <div class="collapse collapse-horizontal" id="collapseWidthExample1">
+                      <div class="card card-body" style="width: 300px;">
+                        This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-3 mb-sm-0">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Templates</h5>
+                  <p class="card-text">Bootstrap is a popular front-end framework that provides a collection of pre-designed HTML, CSS, and JavaScript components, along with a responsive grid system, to help developers create modern and responsive websites and web applications quickly</p>
+                  <p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample2" aria-expanded="false" aria-controls="collapseWidthExample">
+                      More!
+                    </button>
+                  </p>
+                  <div style="min-height: 120px;">
+                    <div class="collapse collapse-horizontal" id="collapseWidthExample2">
+                      <div class="card card-body" style="width: 300px;">
+                        This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Blog</h5>
+                    <p class="card-text">Bootstrap is a popular front-end framework that provides a collection of pre-designed HTML, CSS, and JavaScript components, along with a responsive grid system, to help developers create modern and responsive websites and web applications quickly</p>
+                    <p>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample3" aria-expanded="false" aria-controls="collapseWidthExample">
+                          More!
+                        </button>
+                      </p>
+                      <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal" id="collapseWidthExample3">
+                          <div class="card card-body" style="width: 300px;">
+                            This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+</body>
+</html>

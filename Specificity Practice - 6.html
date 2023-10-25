@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity Practice - 6</title>
+    <style>
+        .black-text{
+            color: black !important;
+        }
+        .green-text{
+            color:green;
+        }
+        #orangeText{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="black-text">Heading</h1>
+    <h1 class="black-text">Heading</h1>
+    <h1 class="green-text">Heading</h1>
+    <h1 class="green-text">Heading</h1>
+    <h1 id="orangeText">Heading</h1>
+    <h1 style="color: blueviolet;">Heading</h1>
+</body>
+</html>
